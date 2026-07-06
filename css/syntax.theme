@@ -1,0 +1,115 @@
+{
+    "text-styles": {
+        "Normal" : {
+            "background-color" : null,
+            "text-color" : "#3c3836",
+            "bold" : false,
+            "italic" : false,
+            "underline" : false,
+            "strike-through" : false
+        },
+        "Keyword" : {
+            "text-color" : "#3c3836",
+            "bold" : true
+        },
+        "Function" : {
+            "text-color" : "#df3b57"
+        },
+        "Variable" : {
+            "text-color" : "#458588"
+        },
+        "ControlFlow" : {
+            "text-color" : "#cc241d",
+            "bold" : true
+        },
+        "Operator" : {
+            "text-color" : "#3c3836"
+        },
+        "BuiltIn" : {
+            "text-color" : "#d65d0e"
+        },
+        "Extension" : {
+            "text-color" : "#689d6a",
+            "bold" : true
+        },
+        "Preprocessor" : {
+            "text-color" : "#d65d0e"
+        },
+        "Attribute" : {
+            "text-color" : "#d79921"
+        },
+        "Char" : {
+            "text-color" : "#b16286"
+        },
+        "SpecialChar" : {
+            "text-color" : "#b16286"
+        },
+        "String" : {
+            "text-color" : "#bf0303"
+        },
+        "VerbatimString" : {
+            "text-color" : "#98971a"
+        },
+        "SpecialString" : {
+            "text-color" : "#98971a"
+        },
+        "Import" : {
+            "text-color" : "#689d6a"
+        },
+        "DataType" : {
+            "text-color" : "#656DA4",
+            "bold" : true
+        },
+        "DecVal" : {
+            "text-color" : "#bf0303"
+        },
+        "BaseN" : {
+            "text-color" : "#bf0303"
+        },
+        "Float" : {
+            "text-color" : "#bf0303"
+        },
+        "Constant" : {
+            "text-color" : "#b16286",
+            "bold" : true
+        },
+        "Comment" : {
+            "text-color" : "#817263",
+            "italic": true
+        },
+        "Documentation" : {
+            "text-color" : "#98971a"
+        },
+        "Annotation" : {
+            "text-color" : "#98971a"
+        },
+        "CommentVar" : {
+            "text-color" : "#928374"
+        },
+        "RegionMarker" : {
+            "text-color" : "#928374",
+            "background-color" : "#f9f5d7"
+        },
+        "Information" : {
+            "text-color" : "#282828",
+            "background-color" : "#83a598"
+        },
+        "Warning" : {
+            "text-color" : "#282828",
+            "background-color" : "#fabd2f"
+        },
+        "Alert" : {
+            "text-color" : "#282828",
+            "background-color" : "#cc241d",
+            "bold" : true
+        },
+        "Error" : {
+            "text-color" : "#cc241d",
+            "underline" : true
+        },
+        "Others" : {
+        }
+    },
+    "line-number-color": "#a0a0a0",
+    "line-number-background-color": "#ffffff"
+}

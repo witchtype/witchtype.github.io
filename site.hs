@@ -26,6 +26,10 @@ main = hakyllWith config $ do
         route   idRoute
         compile copyFileCompiler
 
+    match "css/*.theme" $ do
+        route (setExtension "css")
+        compile kdeSyntaxJsonToCss
+
     match "css/*" $ do
         route   idRoute
         compile compressCssCompiler
