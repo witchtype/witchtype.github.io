@@ -26,6 +26,10 @@ main = hakyllWith config $ do
         route   idRoute
         compile copyFileCompiler
 
+    match "fonts/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "css/*.theme" $ do
         route (setExtension "css")
         compile kdeSyntaxJsonToCss

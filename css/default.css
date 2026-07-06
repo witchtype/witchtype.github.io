@@ -1,12 +1,27 @@
 :root {
     --green: hsl(68, 83%, 38%);
     --pink: #DC2E96;
-    --dark: #371A33 ;
+    --dark: #363434 ;
     --light: #F9DCED;
 }
 
+@font-face {
+    font-family: "Content";
+    src: url("../fonts/JANC.ttf");
+}
+
+@font-face {
+    font-family: "IMfeEN";
+    src: url("../fonts/IMFeENrm29C.otf");
+}
+
+@font-face {
+    font-family: "IMfeENit";
+    src: url("../fonts/IMFeENit29C.otf");
+}
+
 body {
-    background-color: var(--light);
+    background-color: var(--dark);
 }
 
 div#body {
@@ -20,7 +35,7 @@ div#body {
 }
 
 div#header {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     margin-bottom: 30px;
     padding: 12px 0px 12px 0px;
 }
@@ -43,11 +58,10 @@ div#header #navigation a {
     font-weight: bold;
     margin-left: 12px;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 div#footer {
-    border-top: solid 2px black;
+    border-top: solid 1px black;
     color: #555;
     font-size: 12px;
     margin-top: 30px;
@@ -56,6 +70,7 @@ div#footer {
 }
 
 h1 {
+    font-family: "IMFeEN";
     font-size: 28px;
     padding-top: 1em;
 }
@@ -64,6 +79,13 @@ h2 {
     font-size: 20px;
     padding-top: 1em;
     text-decoration: underline;
+}
+
+a {
+    font-family: "Content";
+    text-decoration: none;
+    padding: 1px;
+    border: 1px solid transparent;
 }
 
 div.info {
