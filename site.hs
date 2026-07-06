@@ -1,6 +1,15 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
+import           Data.Aeson  (decode)
 import           Data.Monoid (mappend)
+import           Data.Maybe  (fromJust)
+import           Data.String (fromString)
+import           Data.Time.Format (formatTime, defaultTimeLocale)
+import           Data.Time.Clock (getCurrentTime)
+
+import           Text.Pandoc.Highlighting (styleToCss)
+import           Text.Pandoc.Options
+
 import           Hakyll
 
 
@@ -67,8 +76,14 @@ main = hakyllWith config $ do
 
 
 --------------------------------------------------------------------------------
+
+root :: String
+root = "https://witchtype.github.io"
+
 postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
 
+kdeSyntaxJsonToCss :: Compiler (Item String)
+kdeSyntaxJsonToCss = fmap (styleToCss . fromJust . decode . fromString) <$> getResourceString
