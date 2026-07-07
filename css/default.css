@@ -83,6 +83,22 @@ h2 {
     text-decoration: none;
 }
 
+h3 {
+    color: #581010;
+    font-family: "IMFeEN";
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+h4 {
+    color: #ffffff;
+    font-family: "IMFeEN";
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+
 a {
     color: #291058;
     font-family: "Content";
@@ -107,6 +123,7 @@ li {
 p {
     color: #581010;
     font-family: "IMfeENit";
+    font-size: 16px;
 }
 
 div.info {
