@@ -1,8 +1,8 @@
 :root {
     --green: hsl(68, 83%, 38%);
-    --pink: #DC2E96;
-    --dark: #363434 ;
-    --light: #F9DCED;
+    --pink: #d1c0ad;
+    --dark: #3b322d ;
+    --light: #d3bda3;
 }
 
 @font-face {
@@ -35,15 +35,14 @@ div#body {
 }
 
 div#header {
-    border-bottom: 1px solid black;
     margin-bottom: 30px;
     padding: 12px 0px 12px 0px;
 }
 
 div#logo a {
-    color: black;
+    color: #581010;
     float: left;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -53,7 +52,7 @@ div#header #navigation {
 }
 
 div#header #navigation a {
-    color: black;
+    color: #581010;
     font-size: 18px;
     font-weight: bold;
     margin-left: 12px;
@@ -61,8 +60,8 @@ div#header #navigation a {
 }
 
 div#footer {
-    border-top: solid 1px black;
-    color: #555;
+    color: #581010;
+    font-family: "IMFeEN";
     font-size: 12px;
     margin-top: 30px;
     padding: 12px 0px 12px 0px;
@@ -70,22 +69,44 @@ div#footer {
 }
 
 h1 {
+    color: #581010;
     font-family: "IMFeEN";
     font-size: 28px;
     padding-top: 1em;
 }
 
 h2 {
+    color: #581010;
+    font-family: "IMFeEN";
     font-size: 20px;
     padding-top: 1em;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a {
+    color: #291058;
     font-family: "Content";
     text-decoration: none;
     padding: 1px;
     border: 1px solid transparent;
+}
+
+a:hover {
+    color: #291058;
+}
+
+a:active {
+    color: #ffffff;
+}
+
+li {
+    color: #581010;
+    font-family: "IMFeEN";
+}
+
+p {
+    color: #581010;
+    font-family: "IMfeENit";
 }
 
 div.info {
