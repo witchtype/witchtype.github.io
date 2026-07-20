@@ -84,9 +84,9 @@ div#logo a {
     color: #cfccda;
     float: left;
     font-size: 1.5rem;
-    font-weight: bold;
+    /*font-weight: bold;*/
     text-decoration: none;
-    font-family: "GGR";
+    font-family: "3270";
 }
 
 div#header #navigation {
@@ -95,16 +95,16 @@ div#header #navigation {
 
 div#header #navigation a {
     color: #cfccda;
-    font-family: "GGR";
+    font-family: "3270";
     font-size: 1.25rem;
-    font-weight: bold;
+    /*font-weight: bold;*/
     margin-left: 12px;
     text-decoration: none;
 }
 
 div#footer {
-    color: #581010;
-    font-family: "IMFeEN";
+    color: #9070db;
+    font-family: "3270";
     font-size: 0.75rem;
     margin-top: auto;
     padding: 12px 0px 12px 0px;
