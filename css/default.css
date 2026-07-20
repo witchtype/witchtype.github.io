@@ -20,12 +20,34 @@
     src: url("../fonts/IMFeENit29C.otf");
 }
 
+@font-face {
+    font-family: "3270";
+    src: url("../fonts/3270-Regular.otf")
+}
+
+@font-face {
+    font-family: "TLCT";
+    src: url("../fonts/TexturaLiberaC-Thin.otf")
+}
+
+
+@font-face {
+    font-family: "TLCB";
+    src: url("../fonts/TexturaLiberaX-Black.otf")
+}
+
+@font-face {
+    font-family: "GGR";
+    src: url("../fonts/GrenzeGotisch-Regular.woff2")
+}
+
 body {
-    background-color: #000000;
-    background-image: url('../images/Demon.png');
+    background-image: url('../images/stars_pingpong.gif');
     background-attachment: fixed;
-    background-size: contain;
-    backdrop-filter: brightness(75%);
+    background-size:auto;
+    background-repeat: repeat;
+    backdrop-filter: brightness(85%);
+
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -35,16 +57,19 @@ body {
 }
 
 div#body {
-    background-image: url('../images/scroll2.avif');
+    /*
+    background-image: url('../images/stars_pingpong.gif');
     background-attachment: fixed;
-    background-size: cover;
+    background-size:auto;
+    background-repeat: repeat;
     backdrop-filter: brightness(50%);
+    */
     color: black;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 0px auto 0px auto;
     padding: 12px 40px 12px 40px;
-    width: 90%;
-    max-width: 780px;
+    width: 100%;
+    max-width: 1600px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -56,11 +81,12 @@ div#header {
 }
 
 div#logo a {
-    color: #581010;
+    color: #cfccda;
     float: left;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
+    font-family: "TLCB";
 }
 
 div#header #navigation {
@@ -68,8 +94,9 @@ div#header #navigation {
 }
 
 div#header #navigation a {
-    color: #581010;
-    font-size: 18px;
+    color: #cfccda;
+    font-family: "TLCB";
+    font-size: 1.125rem;
     font-weight: bold;
     margin-left: 12px;
     text-decoration: none;
@@ -78,7 +105,7 @@ div#header #navigation a {
 div#footer {
     color: #581010;
     font-family: "IMFeEN";
-    font-size: 12px;
+    font-size: 0.75rem;
     margin-top: auto;
     padding: 12px 0px 12px 0px;
     text-align: center;
@@ -86,23 +113,24 @@ div#footer {
 
 h1 {
     color: #581010;
-    font-family: "IMFeEN";
-    font-size: 28px;
+    font-family: "TLCB";
+    font-size: 1.75rem;
     padding-top: 1em;
 }
 
 h2 {
-    color: #581010;
-    font-family: "IMFeEN";
-    font-size: 20px;
+    color: #cfccda;
+    font-family: "3270";
+    font-size: 1.25rem;
     padding-top: 1em;
     text-decoration: none;
+    text-align: center;
 }
 
 h3 {
-    color: #581010;
-    font-family: "IMFeEN";
-    font-size: 16px;
+    color: #cfccda;
+    font-family: "3270";
+    font-size: 1rem;
     text-decoration: none;
     text-align: center;
 }
@@ -110,21 +138,21 @@ h3 {
 h4 {
     color: #ffffff;
     font-family: "IMFeEN";
-    font-size: 12px;
+    font-size: 0.75rem;
     text-decoration: none;
     text-align: center;
 }
 
 a {
-    color: #291058;
-    font-family: "Content";
+    color: #cfccda;
+    font-family: "3270";
     text-decoration: none;
     padding: 1px;
     border: 1px solid transparent;
 }
 
 a:hover {
-    color: #291058;
+    color: #c53672;
 }
 
 a:active {
@@ -132,18 +160,31 @@ a:active {
 }
 
 li {
-    color: #581010;
-    font-family: "IMFeEN";
+    color: #9070db;
+    font-family: "3270";
+    list-style-position: inside;
+    text-align: center;
 }
 
 p {
-    color: #581010;
-    font-family: "IMfeENit";
-    font-size: 16px;
+    color: #9070db;
+    font-family: "3270";
+    font-size: 1rem;
+    text-align: center;
 }
 
 div.info {
     color: #555;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: italic;
+}
+
+.highlight {
+    background-color: #000;
+    box-decoration-break: clone;
+    padding: 0.24em 0.3em;
+}
+
+::selection {
+    background: #cfccda;
 }
